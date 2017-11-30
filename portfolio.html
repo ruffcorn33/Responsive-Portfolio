@@ -1,96 +1,74 @@
-<!DOCTYPE html>
-<html>
-  <head lang="en-us">
-    <meta charset="utf-8">
-    <title>Craig Christensen</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
+<!doctype html>
+<html lang="en-us">
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Craig Christensen</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-    <!-- A container to hold all of the content except the navbar -->
+<body>
+
+  <header id="masthead">
     <div class="container">
-      <!-- A full width fixed container to hold navbar elements -->
+      <div id="mastName">Craig Christensen</div>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-      <div class="navbar">
-        <!-- A smaller container to right fix the nav to -->
-        <div id="navContainer">
-          <!-- The links to other pages -->
-          <div id="nav">
-            <ul>
-              <li><a href="index.html">About</a>  |  </li>
-              <li><a style="font-weight: bold" href="portfolio.html">Portfolio</a>  |  </li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div> <!--End of navContainer div -->
-        <!-- A colored box with developer's name offset from left to be in alignment with content -->
-        <div id="name">Craig Christensen</div>
-      </div> <!--End of navbar div -->
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Portfolio</h1>
 
-      <!-- Contains the main content and sidebar boxes -->
-      <div id="content">
-        <!-- Everything that changes from page to page happens in here -->
-        <section id="mainContent">
-          <h2>Portfolio</h2>
-          <div id="portfolio" class="group">
-            <!--  Adapted from https://codepen.io/wizly/pen/lfqFw -->
-            <div class="imgWrapper">
-                <a href="#"><img title="TV Warehouse" img src="assets/images/stock 1.jpg" alt="TV Warehouse"></a>
-                <div class="description">
-                  <p class="description_content">TV Warehouse</p>
-                </div>
-            </div>
-            <div class="imgWrapper">
-                <a href="#"><img title="Manhattan Lighting" img src="assets/images/stock 2.jpg" alt="Manhattan Lighting"></a>
-                <div class="description">
-                  <p class="description_content">Manhattan Lighting</p>
-                </div>
-            </div>
+      <div class="work">
+        <img src="assets/images/stock1.jpg" alt="hangman">
 
-            <div class="imgWrapper">
-                <a href="#"><img title="Giant Fans Online" img src="assets/images/stock 3.jpg" alt="Giant Fans Online"></a>
-                <div class="description">
-                  <p class="description_content">Giant Fans Online</p>
-                </div>
-            </div>
+        <h3>Hangman</h3>
+      </div>
+      <div class="work">
+        <img src="assets/images/stock2.jpg" alt="RPG Game">
 
-            <div class="imgWrapper">
-                <a href="#"><img title="Surf Iceland" img src="assets/images/stock 4.jpg" alt="Surf Iceland"></a>
-                <div class="description">
-                  <p class="description_content">Surf Iceland</p>
-                </div>
-            </div>
+        <h3>RPG Game</h3>
+      </div>
+      <div class="work">
+        <img src="assets/images/stock3.jpg" alt="Trivia Game">
 
-            <div class="imgWrapper">
-                <a href="#"><img title="Bentos r US" img src="assets/images/stock 5.jpg" alt="Bentos r Us"></a>
-                <div class="description">
-                  <p class="description_content">Bentos r Us</p>
-                </div>
-            </div>
+        <h3>Trivia Game</h3>
+      </div>
+      <div class="work">
+        <img src="assets/images/stock4.jpg" alt="Rutgers Info Widget">
 
-          </div>
+        <h3>Rutgers Info Widget</h3>
+      </div>
+      <div class="work">
+        <img src="assets/images/stock5.jpg" alt="Rock Paper Scissors">
 
-        </section> <!--End of mainContent section -->
+        <h3>Rock Paper Scissors</h3>
+      </div>
 
-        <aside id="sideBar"><!-- Links to outside pages -->
-          <div id="Connect">
-            <h2>Connect with Me</h2>
-            <a href="https://github.com/ruffcorn33" target="_blank"><img src="assets/images/GitHub.svg" alt="GitHub" title="GitHub" width="42" height="42" border="0"></a>
-            <a href="https://linkedin.com/in/craig-christensen-818693135" target="_blank"><img src="assets/images/Linkedin.svg" alt="LinkedIn" title="LinkedIn" width="42" height="42" border="0"></a>
-            <a href="https://stackoverflow.com/users/8452434/craig-christensen" target="_blank"><img src="assets/images/stackoverflow.svg" alt="Stack Overflow" title="Stack Overflow" width="40" height="40" border="0"></a>
-          </div>
-        </aside><!--  end of links -->
+    </section>
 
-      </div> <!--End of content div -->
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
 
+        <a href="https://github.com/ruffcorn33"><img src="assets/images/github.svg" class="social" alt="GitHub" /></a>
+        <a href="https://linkedin.com/in/craig-christensen-818693135"><img src="assets/images/linkedin.svg" class="social" alt="LinkedIn" /></a>
+        <a href="https://stackoverflow.com/users/8452434/craig-christensen"><img src="assets/images/stackoverflow.svg" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
 
-    </div><!-- end of main container -->
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 Craig Christensen
+    </div>
+  </footer>
+</body>
 
-    <footer>
-      &copy; Copyright 2017 Craig Christensen
-    </footer>
-
-  </body>
 </html>

@@ -1,66 +1,66 @@
-<!DOCTYPE html>
-<html>
-  <head lang="en-us">
-    <meta charset="utf-8">
-    <title>Craig Christensen</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
+<!doctype html>
+<html lang="en-us">
 
-  <body>
-    <!-- A container to hold all of the content except the navbar -->
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Craig Christensen</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
+<body>
+
+  <header id="masthead">
     <div class="container">
-      <!-- A full width fixed container to hold navbar elements -->
+      <div id="mastName">Craig Christensen</div>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-      <div class="navbar">
-        <!-- A smaller container to right fix the nav to -->
-        <div id="navContainer">
-          <!-- The links to other pages -->
-          <div id="nav">
-            <ul>
-              <li><a href="index.html">About</a> |</li>
-              <li><a href="portfolio.html">Portfolio</a> |</li>
-              <li><a style="font-weight: bold" href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div> <!--End of navContainer div -->
-        <!-- A colored box with developer's name offset from left to be in alignment with content -->
-        <div id="name">Craig Christensen</div>
-      </div> <!--End of navbar div -->
-      <!-- Contains the main content and sidebar boxes -->
-      <div id="content">
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-        <!-- Everything that changes from page to page happens in here -->
-        <section id="mainContent">
-          <h2>Contact</h2>
-          <form action="mailto:craig.Christensen1881@gmail.com" method="post" enctype="text/plain">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="name" placeholder="Your name..">
-            <label for="email">Last Name</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
-            <input type="submit" value="Submit">
-          </form>
-        </section> <!--End of mainContent section -->
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
-        <aside id="sideBar"><!-- Links to outside pages -->
-          <div id="Connect">
-            <h2>Connect with Me</h2>
-            <a href="https://github.com/ruffcorn33" target="_blank"><img src="assets/images/GitHub.svg" alt="GitHub" title="GitHub" width="42" height="42" border="0"></a>
-            <a href="https://linkedin.com/in/craig-christensen-818693135" target="_blank"><img src="assets/images/Linkedin.svg" alt="LinkedIn" title="LinkedIn" width="42" height="42" border="0"></a>
-            <a href="https://stackoverflow.com/users/8452434/craig-christensen" target="_blank"><img src="assets/images/stackoverflow.svg" alt="Stack Overflow" title="Stack Overflow" width="40" height="40" border="0"></a>
-          </div>
-        </aside><!--  end of links -->
+    </section>
 
-      </div> <!--End of content div -->
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
 
-    </div><!-- end of main container -->
+        <a href="https://github.com/ruffcorn33"><img src="assets/images/github.svg" class="social" alt="GitHub" /></a>
+        <a href="https://linkedin.com/in/craig-christensen-818693135"><img src="assets/images/linkedin.svg" class="social" alt="LinkedIn" /></a>
+        <a href="https://stackoverflow.com/users/8452434/craig-christensen"><img src="assets/images/stackoverflow.svg" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
 
-    <footer>
-      &copy; Copyright 2017 Craig Christensen
-    </footer>
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 Craig Christensen
+    </div>
+  </footer>
+</body>
 
-  </body>
 </html>
