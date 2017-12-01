@@ -286,7 +286,7 @@ input[type=submit] {
 @media only screen and (max-width: 980px) and (min-width: 2080px) {
 
   .main-section {
-    float: none;
+    float: left;
     width: 66%;
     max-width: 650px;
   }
@@ -294,6 +294,7 @@ input[type=submit] {
   .auth-image {
     float: none;
     width: 100%;
+    max-width: none;
   }
 
   .sidebar {
@@ -304,7 +305,7 @@ input[type=submit] {
 /* tablet */
 @media only screen and (max-width: 768px) {
   #mastName {
-    background: #cc9fc6;
+    /*background: #cc9fc6;*/
   }
 
   .main-section
@@ -345,7 +346,7 @@ input[type=submit] {
   }
 
   #mastName {
-    background: #d8f4ad;
+    /*background: #d8f4ad;*/
     width: 100%;
   }
 
@@ -364,6 +365,12 @@ input[type=submit] {
     float: none;
     width: 100%;
     max-width: none;
+  }
+
+  .work {
+    margin: 0 auto;
+    /*width: 60%;*/
+    align-self: center;
   }
 
   nav {
