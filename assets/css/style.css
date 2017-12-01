@@ -292,13 +292,13 @@ input[type=submit] {
   }
 
   .auth-image {
-    float: none;
+    float: left;
     width: 100%;
     max-width: none;
   }
 
   .sidebar {
-    float: right;
+    /*float: right;*/
     width: 33%;
   }
 }
@@ -308,9 +308,8 @@ input[type=submit] {
     /*background: #cc9fc6;*/
   }
 
-  .main-section
+  /*.main-section*/
   .sidebar {
-    /*float: none;*/
     width: 100%;
     margin: 30px;
   }
@@ -331,7 +330,7 @@ input[type=submit] {
   }
 
   .sidebar {
-    float: left;
+    float: right;
     max-width: none;
   }
 
@@ -359,6 +358,7 @@ input[type=submit] {
   .auth-image {
     float: none;
     width: 100%;
+    max-width: none;
   }
 
   .sidebar {
